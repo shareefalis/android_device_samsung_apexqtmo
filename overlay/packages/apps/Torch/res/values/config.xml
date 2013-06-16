@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
 ** Copyright 2011, The CyanogenMod Project
@@ -18,6 +17,18 @@
 -->
 
 <resources>
+    <!-- If there is no sysfs-based control mechanism, enable this -->
+    <bool name="useCameraInterface">false</bool>
+
+    <!-- Full path to the sysfs toggle -->
     <string name="flashDevice">/sys/devices/virtual/camera/rear/rear_flash</string>
+
+    <!-- Lowest setting -->
+    <integer name="valueOn">1</integer>
+    <!-- Middle setting -->
+    <integer name="valueHigh">-1</integer>
+    <!-- Highest setting, leave -1 if it doesn't exist -->
+    <integer name="valueDeathRay">-1</integer>
+
 </resources>
 

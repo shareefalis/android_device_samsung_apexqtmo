@@ -30,7 +30,8 @@ TARGET_SCREEN_WIDTH := 480
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
-    device/samsung/apexqtmo/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x 
+    device/samsung/apexqtmo/media/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
+    device/samsung/apexqtmo/media/media_profiles.xml:system/etc/media_profiles.xml
 
 # Hardware keyboard
 PRODUCT_COPY_FILES += \
